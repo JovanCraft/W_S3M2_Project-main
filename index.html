@@ -156,12 +156,12 @@
     // checkInts(2, 6) // should return ["even", "even"]
     // ❗ Notes:
     // 🧠 Solve this problem using rest parameters and map.
-    const checkInts = (...nums) => {
-      if(nums.length === 0){
+    const checkInts = (...ints) => {
+      if(ints.length === 0){
         return "pass some arguments, yo!"
       } else {
-        return nums.map(num => {
-          if(num % 2 === 0){
+        return ints.map(int => {
+          if(int % 2 === 0){
             return "even"
           } else {
             return "odd"
